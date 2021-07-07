@@ -1,0 +1,125 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    width: 100%;
+    background-image: url('./../img/background.png');
+}
+
+thead {
+    background: white;
+    color: #1266F1;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+table, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead tr td:first-child {
+    background-color: #fff;
+}
+
+thead span {
+    color: #1266F1;
+    font-size: 1.5rem;
+    padding: 5px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+tbody {
+    font-weight: 500;
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 0 100px;
+    background-color: #fff;
+    z-index: 100;
+    width: 100%;
+}
+
+.form-outline {
+    width: 300px;
+}
+
+.form-outline input {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check:last-child {
+    margin-right: 0;
+}
+
+.form-check label {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.main {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 60px;
+    padding-top: 25px;
+}
+
+.datalist-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.data-item {
+    width: 32%;
+    display: block;
+    margin-right: 0;
+}
+
+.hidden {
+    display: none;
+}
+

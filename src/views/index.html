@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="input-group">
+            <div class="form-outline">
+                <input type="search" id="searchInput" class="form-control" />
+                <label class="form-label" for="searchInput">Search</label>
+            </div>
+            <button type="submit" class="btn btn-primary search-btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="checkbox-wrapper">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="users" value="users" />
+                <label class="form-check-label" for="users">users</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="books" value="books" />
+                <label class="form-check-label" for="books">books</label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="movies" value="movies" />
+                <label class="form-check-label" for="movies">movies</label>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <ul class="datalist-wrapper">
+            <li class="data-item hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><span class="fas fa-users"></span></td>
+                            <td>First Name</td>
+                            <td>Last Name</td>
+                            <td>Phone Number</td>
+                        </tr>
+                    </thead>
+                    <tbody class="users-table">
+                    </tbody>
+                </table>
+            </li>
+            <li class="data-item hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><span class="fas fa-book"></span></td>
+                            <td>Book Name</td>
+                            <td>Year</td>
+                            <td>Genre</td>
+                        </tr>
+                    </thead>
+                    <tbody class="books-table">
+                    </tbody>
+                </table>
+            </li>
+            <li class="data-item hidden">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><span class="fas fa-video"></span></td>
+                            <td>Movie Name</td>
+                            <td>Year</td>
+                            <td>Genre</td>
+                        </tr>
+                    </thead>
+                    <tbody class="movies-table">
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </main>
+    <script src="./js/mdb.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
