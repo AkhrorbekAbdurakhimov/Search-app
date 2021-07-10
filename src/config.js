@@ -1,5 +1,5 @@
 const host = 'localhost'
-const PORT = 7000
+const PORT = 5000
 
 module.exports = {host, PORT}
 
